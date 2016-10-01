@@ -5,10 +5,19 @@
     var year    = now.getFullYear();
     var month   = now.getMonth()+1; 
     var day     = now.getDate();
-	var weekDay = now.getDay();
     var hour    = now.getHours();
     var minute  = now.getMinutes();
     var second  = now.getSeconds();
+	var weekDay = now.getDay();	
+	var weekDay = new Array(7);
+		weekDay[0]=  "Sunday";
+		weekDay[1] = "Monday";
+		weekDay[2] = "Tuesday";
+		weekDay[3] = "Wednesday";
+		weekDay[4] = "Thursday";
+		weekDay[5] = "Friday";
+		weekDay[6] = "Saturday";
+
 	
     if(month.toString().length == 1) {
         var month = '0'+month;
