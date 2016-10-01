@@ -8,7 +8,7 @@
     var hour    = now.getHours();
     var minute  = now.getMinutes();
     var second  = now.getSeconds();
-	var weekDay = now.getDay();	
+
 	var weekDay = new Array(7);
 		weekDay[0]=  "Sunday";
 		weekDay[1] = "Monday";
@@ -17,7 +17,7 @@
 		weekDay[4] = "Thursday";
 		weekDay[5] = "Friday";
 		weekDay[6] = "Saturday";
-
+	var weekDay = now.getDay;	
 	
     if(month.toString().length == 1) {
         var month = '0'+month;
@@ -27,7 +27,7 @@
         var day = '0'+day;
     }
 	
-	if (weekDay.toString().length ==1) {
+	if (weekDay.toString().length == 1) {
 		var weekDay = '0'+weekDay;
 	}
 	
