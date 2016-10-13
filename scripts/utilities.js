@@ -1,9 +1,9 @@
 "use strict";
 
-function getNameWeekDay(Day){
+function getNameWeekDay(now){
 	var WeekDay = ["Monday", "Tuesday", "Wendnesday", "Thursday", "Friday", "Saturday",
 						"Sunday"];
-	return WeekDay[Day.getDay()];					
+	return WeekDay[now.getDay()];					
 }
 
  function getDateTime() {
@@ -41,6 +41,6 @@ function getNameWeekDay(Day){
 			second = '0'+second;
     }
 	
-    var dateTime = year+'/'+month+'/'+day+' '+"Today is "+getNameWeekDay(Day)+' '+"Current time is: "+hour+':'+minute+':'+second ;   
+    var dateTime = year+'/'+month+'/'+day+' '+"Today is "+getNameWeekDay(now)+' '+"Current time is: "+hour+':'+minute+':'+second ;   
      return dateTime;
 }
