@@ -46,5 +46,5 @@ function getNameWeekDay(now){
 }
 
 function showDate(){
-	document.getElementById("Date").textContent = now;
+	document.getElementById("Date").innerText = getDateTime();
 }
