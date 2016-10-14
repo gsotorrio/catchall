@@ -44,3 +44,7 @@ function getNameWeekDay(now){
     var dateTime = year+'/'+month+'/'+day+' '+"Today is "+getNameWeekDay(now)+' '+"Current time is: "+hour+':'+minute+':'+second ;   
      return dateTime;
 }
+
+function showDate(){
+	document.getElementById("Date").textContent = now;
+}
