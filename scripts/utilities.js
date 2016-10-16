@@ -1,29 +1,18 @@
 "use strict";
 
 function getNameWeekDay(now){
-	var WeekDay = ["Monday", "Tuesday", "Wendnesday", "Thursday", "Friday", "Saturday", "Sunday"];
+	var WeekDay = ["Sunday" , "Monday", "Tuesday", "Wendnesday", "Thursday", "Friday", "Saturday"];
 	
 	return WeekDay[now.getDay()];					
 }
 
  function getDateTime() {
     var now     = new Date(); 
-    var year    = now.getFullYear();
-    var month   = now.getMonth() + 1; 
-    var day     = now.getDate();
     var hour    = now.getHours();
     var minute  = now.getMinutes();
     var second  = now.getSeconds();
 	var weekDay = now.getDay();	
 
-	
-    if (month.toString().length == 1) {
-			month = '0'+month;
-    }
-	
-    if (day.toString().length == 1) {
-			day = '0'+day;
-    }
 	
 	if (weekDay.toString().length == 1) {
 			weekDay = '0'+weekDay;
@@ -41,7 +30,7 @@ function getNameWeekDay(now){
 			second = '0'+second;
     }
 	
-    return year + '/' + month + '/' + day + ' ' + "Today is " + getNameWeekDay(now) + ' ' + "Current time is: " + hour + ':' + minute + ':' + second;
+    return "Today is " + getNameWeekDay(now) + ' ' + "Current time is: " + hour + ':' + minute + ':' + second;
 }
 
 function showDate(){
