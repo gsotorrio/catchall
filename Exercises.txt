@@ -1,0 +1,5 @@
+1. Write a JavaScript program to display the current day and time in the following format.
+- Today is : Friday. Current time is : 4 PM : 50 : 22
+
+2. Write a JavaScript program to calculate the area of a triangle knowing its 3 sides.
+- The user would input the sides from 3 textboxes and click a button to see the resulted area.
