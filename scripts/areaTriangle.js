@@ -4,7 +4,7 @@ var side1 = window.document.getElementById("A").value;
 var side2 = window.document.getElementById("B").value;   
 var side3 = window.document.getElementById("C").value;
 
-function area (side1, siede2, side3){
+function area (itemClicked){
 	
 	if(side1 || side2 || side3 == NaN){
 		alert ("This isnt a number");
