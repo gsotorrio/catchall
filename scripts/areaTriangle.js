@@ -14,9 +14,11 @@ function area (itemClicked){
 		alert ("Please use positive numbers");
 	}
 	
-	else (){}
+	else (){
+		var perimeter = (side1 + side2 + side3)/2;  
+		var opetation =  Math.sqrt(perimeter*((perimeter-side1)*(perimeter-side2)*(perimeter-side3))); 
+		return (operation);
+	}
 }
 
    
-var perimeter = (side1 + side2 + side3)/2;  
-var area =  Math.sqrt(perimeter*((perimeter-side1)*(perimeter-side2)*(perimeter-side3)));  
