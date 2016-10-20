@@ -1,8 +1,8 @@
 "use strict";
 
-var side1 = window.document.getElementById("A");   
-var side2 = window.document.getElementById("B");   
-var side3 = window.document.getElementById("C");
+var side1 = window.document.getElementById("A").value;   
+var side2 = window.document.getElementById("B").value;   
+var side3 = window.document.getElementById("C").value;
 
 function area (side1, side2, side3){
 	
