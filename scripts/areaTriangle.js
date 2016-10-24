@@ -2,16 +2,16 @@
 
 function area (){
 	
-	var side1 = window.document.getElementById("A").value;   
-	var side2 = window.document.getElementById("B").value;   
-	var side3 = window.document.getElementById("C").value;
+	var side1 = parseInt(window.document.getElementById("A").value);   
+	var side2 = parseInt(window.document.getElementById("B").value);   
+	var side3 = parseInt(window.document.getElementById("C").value);
 	
 	if(side1 == NaN || side2 == NaN || side3 == NaN){
 		alert ("This isnt a number");
 	}
 		
 	if (side1 <= 0 || side2 <= 0 || side3 <= 0){
-			alert ("Please use positive numbers");
+		alert ("Please use positive numbers");
 	}
 	else {
 		var perimeter = (side1 + side2 + side3)/2;  
