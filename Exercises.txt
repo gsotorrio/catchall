@@ -4,6 +4,6 @@
 2. Write a JavaScript program to calculate the area of a triangle knowing its 3 sides.
 - The user would input the sides from 3 textboxes and click a button to see the resulted area.
 
-3. Write a JavaScript program to display the current date and time dynamically. In other words, create a JavaScript clock.
-- The format of the date and time would be: dd-mm-yy hh:mm:ss
+3. Write a JavaScript program to display a clock.
+- The format of the time would be: hh:mm:ss
 - Clue: http://www.w3schools.com/jsref/met_win_setinterval.asp
