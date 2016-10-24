@@ -9,31 +9,32 @@
 	</head>
 	
 	<body onload = "showDate()">
-		<p>
-			<h1>What time it is???<h1> 
-		</p>
 		
-		<div id="Date" style="text-align:left;"></div>
+		<section>
+			<header><h2>Exercise 1: What time is it?</h2></header>
+			<p id="Date" style="text-align:left;"></p>
+		</section>
 		
-		</br>
+		<hr />
 		
-		<p> 
-			<h1>Get the area of triangle</h1> 
-		</p>
+		<section>
+			<header><h2>Exercise 2. Get the area of a triangle</h2></header>
+
+			<p>Give me the sides of your triangle</p>
+			
+			<p>							 A <INPUT type="text" name="A" size="25" id="A">
+					&nbsp; &nbsp; &nbsp; B <INPUT type="text" name="B" size="25" id="B">
+					&nbsp; &nbsp; &nbsp; C <INPUT type="text" name="C" size="25" id="C">
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <button type="button" onclick="area()">Get area!</button>	
+			</p>
+			
+			<p>The area is:
+				<span id="result"></span>
+			</p>
+		</section>
 		
-		<p> 
-			<h3>Give me the sides of your triangle</h3> 
-		</p>
+		<hr />
 		
-		<p>							 A <INPUT type="text" name="A" size="25" id="A">
-				&nbsp; &nbsp; &nbsp; B <INPUT type="text" name="B" size="25" id="B">
-				&nbsp; &nbsp; &nbsp; C <INPUT type="text" name="C" size="25" id="C">
-				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <button type="button" onclick="area()">Get area!</button>	
-		</p>
-		
-		<p>The area is:
-			<span id="result"></span>
-		</p>
 	</body>
 	
 	<script type="text/javascript" src="scripts\utilities.js"></script>	
