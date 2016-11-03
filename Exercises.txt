@@ -11,3 +11,11 @@
 4. Write a JavaScript program to know how long a person has lived so far.
 - The user will introduce his birthdate
 - The program will show the user years lived, months lived, days lived, hours lived and minutes lived
+
+5. Write a JavaScript program that ask the user for a number and the program show the user the reversed number
+- For example: The user types 12345. The program shows the user 54321.
+
+6. Write a JavaScript function that checks whether a passed string is palindrome or not.
+A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam.
+- The program will asks the user for a word.
+- The the program will shows a message to the user saying it the word was a palindrome.
