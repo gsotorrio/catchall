@@ -4,15 +4,15 @@ var totalToday = "";
 
 function takeDates(){
 	var giveDate = window.document.getElementById("textBox").value;
-	var bornDate = new Date (giveDate);
 	
+	var bornDate = new Date (giveDate);
 	var bornYear = bornDate.getYear();
 	var bornMounth = bornDate.getMonth()+1;
 	var bornDay = bornDate.getDate();
 	totalBorn = (bornYear+1900)*365 + bornMounth*30 + bornDay;
 	
 	if (bornYear < 0){
-		totalBorn = 0;
+		totalBorn = "";
 		alert ("You are died");
 	}
 	
@@ -21,15 +21,21 @@ function takeDates(){
 	var mounth = todayDate.getMonth()+1;
 	var day = todayDate.getDate();
 	totalToday = year*365 + mounth*30 + day;
+	
+	if (bornMounth != NaN){
+		alert ("Please use a correct date");
+		totalBorn = "";
+		totalToday="";
+	}
 }	
 
-function operate (){
+function operate(){
 	var total = totalToday - totalBorn;
 	var a = total/365;
-	var year = Math.floor(a)
 	var b = "";
+	var year = Math.floor(a)
 	var mounth = 0;
-	var days = "";
+	var days = 0;
 	
 	if (a % 1 == 0) {
 		year = a;
@@ -46,7 +52,14 @@ function operate (){
 	}
 	
 	days = b - mounth*30;
-	
-	return "You are living" + year + mounth + days;
+	if (totalToday == ""){
+	}
+	else {
+		alert ("You are living" + " " + year + "years" + " " + mounth + "mounts" + " " + days + "days");
+		}	
 }
- 
+
+function giveTimeYourLive (){
+	window.document,getElementById("age").value = operte();
+}
+
