@@ -22,7 +22,7 @@ function takeDates(){
 	var day = todayDate.getDate();
 	totalToday = year*365 + mounth*30 + day;
 	
-	if (bornMounth != NaN){
+	if (isNaN(bornMounth) == true){
 		alert ("Please use a correct date");
 		totalBorn = "";
 		totalToday="";
@@ -52,10 +52,11 @@ function operate(){
 	}
 	
 	days = b - mounth*30;
+	
 	if (totalToday == ""){
 	}
 	else {
-		alert ("You are living" + " " + year + "years" + " " + mounth + "mounts" + " " + days + "days");
+		return "You are living" + " " + year + "years" + " " + mounth + "mounts" + " " + days + "days";
 		}	
 }
 
