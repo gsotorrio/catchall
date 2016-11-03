@@ -1,6 +1,8 @@
 "use strict";
 var totalBorn ="";
-function gh(){
+var totalToday = "";
+
+function takeDates(){
 	var giveDate = window.document.getElementById("textBox").value;
 	var bornDate = new Date (giveDate);
 	
@@ -8,11 +10,16 @@ function gh(){
 	var bornMounth = bornDate.getMonth()+1;
 	var bornDay = bornDate.getDate();
 	totalBorn = (bornYear+1900)*365 + bornMounth*30 + bornDay;
-}	
- 
-function takeDates (){
+	
+	if (bornYear < 0){
+		totalBorn = 0;
+		alert ("You are died");
+	}
+	
 	var todayDate = new Date();
 	var year = todayDate.getFullYear();
 	var mounth = todayDate.getMonth()+1;
 	var day = todayDate.getDate();
-}
+	totalToday = year*365 + mounth*30 + day;
+}	
+ 
