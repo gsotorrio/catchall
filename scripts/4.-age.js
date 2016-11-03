@@ -26,12 +26,27 @@ function takeDates(){
 function operate (){
 	var total = totalToday - totalBorn;
 	var a = total/365;
+	var year = Math.floor(a)
 	var b = "";
-	 if (a % 1 == 0) {
+	var mounth = 0;
+	var days = "";
+	
+	if (a % 1 == 0) {
 		year = a;
     }
     else{
         b = total - Math.floor(a)*365;
     }
+	
+	if (b <30){
+		days = b;
+	}
+	else{
+		mounth = Math.floor(b/30); 
+	}
+	
+	days = b - mounth*30;
+	
+	return "You are living" + year + mounth + days;
 }
  
