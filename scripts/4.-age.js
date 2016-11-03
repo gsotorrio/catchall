@@ -22,4 +22,16 @@ function takeDates(){
 	var day = todayDate.getDate();
 	totalToday = year*365 + mounth*30 + day;
 }	
+
+function operate (){
+	var total = totalToday - totalBorn;
+	var a = total/365;
+	var b = "";
+	 if (a % 1 == 0) {
+		year = a;
+    }
+    else{
+        b = total - Math.floor(a)*365;
+    }
+}
  
