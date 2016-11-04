@@ -16,7 +16,7 @@ function takeDates(){
 	// Conditional for know if you born before 1900	
 	if (bornYear < 0){
 		totalBorn = "";
-		alert ("You are died");
+		alert (" Sorry. You are died");
 	}
 
 	// Convert in days today date	
