@@ -40,7 +40,7 @@ function takeDates(){
     var hour    = now.getHours();
     var minute  = now.getMinutes();  	
 	
-    return  hour + ':' + minute;
+    return  hour + "hours" + " " + "and" + " " + minute + "minutes";
 }	
 
 // This function get the solution.
@@ -80,7 +80,7 @@ function operate(){
 }
 
 // Function for show the solution.
-function giveTimeYourLive (){
+function showTimeYourLive (){
 	window.document.getElementById("age").innerText = operate();
 }
 
