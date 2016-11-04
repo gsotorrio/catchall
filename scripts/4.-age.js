@@ -32,6 +32,15 @@ function takeDates(){
 		totalBorn = "";
 		totalToday="";
 	}
+}
+
+// Function get hours and minutes
+ function getTime() {
+    var now     = new Date(); 
+    var hour    = now.getHours();
+    var minute  = now.getMinutes();  	
+	
+    return  hour + ':' + minute;
 }	
 
 // This function get the solution.
@@ -66,7 +75,7 @@ function operate(){
 	if (totalToday == ""){
 	}
 	else {
-		return "You are living" + " " + year + "years" + " " + mounth + "mounts" + " " + days + "days";
+		return "You are living" + " " + year + "years," + " " + mounth + "mounts," + " " + days + "days" + " " + "and this time " + getTime();
 		}	
 }
 
