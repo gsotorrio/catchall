@@ -18,7 +18,13 @@ function checkPalindrome(){
 			x--;
 		}
 	}	
-  return "Your new number is: " +  wordPal;
+	
+	if (wordPal == word){
+		return "This word is a palindrome";
+	}
+	else {
+		return "this word it is not palindrome";
+	}
 }
 
 
