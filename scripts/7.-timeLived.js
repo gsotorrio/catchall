@@ -3,8 +3,8 @@ var totalBorn ="";
 var totalToday = "";
 
 // Function for get totalBorn and totalToday
-function takeDates(){
-	var giveDate = window.document.getElementById("textBox").value;
+function getDates(){
+	var giveDate = window.document.getElementById("box").value;
 
 	// Take the user born date and convert this date in days	
 	var bornDate = new Date (giveDate);
@@ -35,7 +35,7 @@ function takeDates(){
 }
 
 // Function get hours and minutes
- function getTime() {
+ function knowTime() {
     var now     = new Date(); 
     var hour    = now.getHours();
     var minute  = now.getMinutes();  	
@@ -44,7 +44,7 @@ function takeDates(){
 }	
 
 // This function get the solution.
-function operate(){
+function calculate(){
 
 	// var assistant for calculate	
 	var total = totalToday - totalBorn;
@@ -75,11 +75,11 @@ function operate(){
 	if (totalToday == ""){
 	}
 	else {
-		return "You are living" + " " + year + "years," + " " + mounth + "mounts," + " " + days + "days" + " " + "and this time " + getTime();
+		return "You lived" + " " + year + "years," + " " + mounth+year*12 + "mounts," + " " + days + "days" + " " + "and this time " + knowTime();
 		}	
 }
 
 // Function for show the solution.
-function showTimeYourLive (){
-	window.document.getElementById("age").innerText = operate();
+function showLived (){
+	window.document.getElementById("timer").innerText = calculate();
 }
