@@ -19,3 +19,5 @@
 A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam.
 - The program will asks the user for a word.
 - The the program will shows a message to the user saying it the word was a palindrome.
+
+7. Do well the exercise 4.
