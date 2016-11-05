@@ -32,6 +32,8 @@ function getDates(){
 		totalBorn = "";
 		totalToday="";
 	}
+	
+	calculate();
 }
 	
 // This function get the solution.
@@ -70,19 +72,12 @@ function calculate(){
 	days = b - mounth*30;
 
 	// This var calculate the solution for return
-	var totalMounth = year*12+mounth;
-	var totalDays = year*365+mounth*30+days;
-	var totalHours = totalDays*24+hour;
-	var totalMinutes = totalHours*60+minute
+	var totalMounth = year*12 + mounth;
+	var totalDays = year*365 + mounth*30 + days;
+	var totalHours = totalDays*24 + hour;
+	var totalMinutes = totalHours*60 + minute;
 	
-	if (totalToday == ""){
-	}
-	else {
-		return "You lived" + " " + year + "years," + " " + totalMounth + "mounths," + " " + totalDays + "days," + " " + totalHours + "hours" + " " + "and" + " " + totalMinutes + "minutes";
-		}	
-}
-
-// Function for show the solution.
-function showLived(){
-	window.document.getElementById("timer").innerText = calculate();
+	if (totalToday != ""){
+		window.document.getElementById("timer").innerText = "You lived" + " " + year + "years," + " " + totalMounth + "mounths," + " " + totalDays + "days," + " " + totalHours + "hours" + " " + "and" + " " + totalMinutes + "minutes";
+	}	
 }
