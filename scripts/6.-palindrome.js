@@ -5,35 +5,31 @@ function checkPalindrome(){
 	var word = window.document.getElementById("wordBox").value;
 	
 	//This var help for know if user write words or numbers
-	var aux = parseInt(window.document.getElementById("wordBox").value);
+	var aux = parseInt(word);
 	
 	// These var are asistants for reverser the words.
-	var x = word.length;
+	var numberOfLetter = word.length;
     var wordPal = "";
  
 	// This conditional check if user write words or numbers
-	if (isNaN(aux) == false){
+	if (isNaN(aux) != true){
 		alert ("please only words")
 	}
 	
 	else{
 		// Reverser the words
-		while (x>=0) {
-			wordPal = wordPal + word.charAt(x);
-			x--;
+		while (numberOfLetter >= 0) {
+			wordPal = wordPal + word.charAt(numberOfLetter);
+			numberOfLetter--;
 		}
 	}	
 	
 	// This conditional check and return if the words are palindromes.
 	if (wordPal == word){
-		return "This word is a palindrome";
+		window.document.getElementById("wordPalindrome").innerText = "This word is a palindrome";
 	}
 	else {
-		return "this word it is not palindrome";
+		window.document.getElementById("wordPalindrome").innerText = "this word it is not palindrome";
 	}
 }
 
-// This function show the returns with solution.
-function showTheWord(){
-	window.document.getElementById("wordPalindrome").innerText = checkPalindrome();
-}

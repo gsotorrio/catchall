@@ -1,31 +1,29 @@
 "use strict";
-// Function do the reserver
+// Function do the reverser
 function reverser(){
 	// This var take the number that the user enter
 	var number = window.document.getElementById("numberBox").value;
 	
 	// This is asistant var for know if is a number.
-	var aux = parseInt(window.document.getElementById("numberBox").value);
+	var aux = parseInt(number);
 	
 	// Asistants var for reverser the number 
-	var x = number.length;
+	var numberOfCharacters = number.length;
     var numberRverser = "";
  
 	// Conditional for know if the user give numbers or no.
-	if (isNaN(aux) == true){
+	if (isNaN(aux)){
 		alert ("please only numbers")
 	}
 	else{
 		// This make the reverser.
-		while (x>=0) {
-			numberRverser = numberRverser + number.charAt(x);
-			x--;
+		while (numberOfCharacters >= 0) {
+			numberRverser = numberRverser + number.charAt(numberOfCharacters);
+			numberOfCharacters--;
 		}
 	}	
-  return "Your new number is: " +  numberRverser;
+	window.document.getElementById("numRev").innerText = "Your new number is: " +  numberRverser;
 }
 
-// Function show the new number.
-function showNumberReverser(){
-	window.document.getElementById("numRev").innerText = reverser();
-}
+
+
