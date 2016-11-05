@@ -75,7 +75,7 @@ function operate(){
 	if (totalToday == ""){
 	}
 	else {
-		return "You are living" + " " + year + "years," + " " + mounth + "mounts," + " " + days + "days" + " " + "and this time " + getTime();
+		return "You are living" + " " + year + "years," + " " + mounth + "mounths," + " " + days + "days" + " " + "and this time " + getTime();
 		}	
 }
 

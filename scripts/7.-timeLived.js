@@ -33,23 +33,18 @@ function getDates(){
 		totalToday="";
 	}
 }
-
-// Function get hours and minutes
- function knowTime() {
-    var now     = new Date(); 
-    var hour    = now.getHours();
-    var minute  = now.getMinutes();  	
 	
-    return  hour + "hours" + " " + "and" + " " + minute + "minutes";
-}	
-
 // This function get the solution.
 function calculate(){
 
+	var now     = new Date(); 
+    var hour    = now.getHours();
+    var minute  = now.getMinutes();  
+	
 	// var assistant for calculate	
 	var total = totalToday - totalBorn;
 	var a = total/365;
-	var b = "";
+	var b = 0;
 
 	// var for return the solution	
 	var year = Math.floor(a)
@@ -71,15 +66,20 @@ function calculate(){
 	}
 	
 	days = b - mounth*30;
+
+	var totalMounth = year*12+mounth;
+	var totalDays = year*365+mounth*30+days;
+	var totalHours = totalDays*24+hour;
+	var totalMinutes = totalHours*60+minute
 	
 	if (totalToday == ""){
 	}
 	else {
-		return "You lived" + " " + year + "years," + " " + mounth+year*12 + "mounts," + " " + days + "days" + " " + "and this time " + knowTime();
+		return "You lived" + " " + year + "years," + " " + totalMounth + "mounths," + " " + totalDays + "days," + " " + totalHours + "hours" + " " + "and" + " " + totalMinutes + "minutes";
 		}	
 }
 
 // Function for show the solution.
-function showLived (){
+function showLived(){
 	window.document.getElementById("timer").innerText = calculate();
 }
