@@ -36,7 +36,8 @@ function getDates(){
 	
 // This function get the solution.
 function calculate(){
-
+	
+	//this var get the hours and minutes today 
 	var now     = new Date(); 
     var hour    = now.getHours();
     var minute  = now.getMinutes();  
@@ -46,11 +47,12 @@ function calculate(){
 	var a = total/365;
 	var b = 0;
 
-	// var for return the solution	
+	// var asistant for calculate the solution	
 	var year = Math.floor(a)
 	var mounth = 0;
 	var days = 0;
 	
+	// logic for calculate year, mounth and days var.
 	if (a % 1 == 0) {
 		year = a;
     }
@@ -67,6 +69,7 @@ function calculate(){
 	
 	days = b - mounth*30;
 
+	// This var calculate the solution for return
 	var totalMounth = year*12+mounth;
 	var totalDays = year*365+mounth*30+days;
 	var totalHours = totalDays*24+hour;

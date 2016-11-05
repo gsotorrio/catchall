@@ -56,6 +56,7 @@ function operate(){
 	var mounth = 0;
 	var days = 0;
 	
+	// logic for calculate year, mounth and days var.
 	if (a % 1 == 0) {
 		year = a;
     }
