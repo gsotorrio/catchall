@@ -21,3 +21,11 @@ A palindrome is word, phrase, or sequence that reads the same backward as forwar
 - The the program will shows a message to the user saying it the word was a palindrome.
 
 7. Do well the exercise 4.
+
+8. Write a JavaScript program that reverses the following array: [1, 40, 3, 20, 5, 13, 7, 10, 15]
+- Original array: [1, 40, 3, 20, 5, 13, 7, 10, 15] and the user click to reverse it
+- Reversed array: [15, 10, 7, 13, 5, 20, 3, 40, 1]
+
+9. Write a JavaScript program that displays on the screen the following array: 
+[["mi", "nombre", ["es", "willy"], ["sotorrio", "y"], ["tengo", "30"], ["años", "creo!!"]]
+- display it like in a sentence: mi nombre es willy sotorrio y tengo 30 años creo!!
