@@ -4,9 +4,12 @@ function getSentence(){
 	var mySentence = [["Mi", "nombre"], ["es", "Guillermo"], ["Sotorrio", "y"], ["tengo", "30"], ["años", "creo!!"]]; 
 	
 	for(var i = 0; i < mySentence.length; i++){
-		for(var z = 0; z < mySentence.length; z++){
-		console.log(mySentence[i][z]);
-		window.document.getElementById("solution").innerText = mySentence[i][z]
+		
+		var secondElementArray = mySentence[i];
+		
+		for(var j = 0; j < secondElementArray.length; j++){
+		console.log(mySentence[i][j]);
+		window.document.getElementById("solution").innerText = mySentence[i][j];
 		}
 	}
 }
