@@ -30,7 +30,10 @@ A palindrome is word, phrase, or sequence that reads the same backward as forwar
 [["mi", "nombre", ["es", "willy"], ["sotorrio", "y"], ["tengo", "30"], ["años", "creo!!"]]
 - display it like in a sentence: mi nombre es willy sotorrio y tengo 30 años creo!!
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a219926ab81ac5b256a6829cbc2c4395bbb8a49e
 10. Write a JavaScript function that returns a passed string with letters in alphabetical order.
 - Example string : 'webmaster' 
 - Expected Output : 'abeemrstw'
