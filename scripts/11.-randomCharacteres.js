@@ -7,15 +7,13 @@ function showAllCharacteresUserWant(count){
     count = parseInt(window.document.getElementById("numberCharacteres").value);
  
     if (isNaN(count) == true){
-        //var a = "melon solo numeros";
-        //alert(a);
         window.document.getElementById("divError").style.display = "inline-block";
     }
 
     else{
         for (var i = 0; i < count; i++){
             window.document.getElementById("divError").style.display = "none";
-            
+
             var formulaForGetRamdomElements = Math.floor(Math.random() * slectElements.length);
             var newArrayWithRamdomElements = slectElements.splice(formulaForGetRamdomElements, 1);
         

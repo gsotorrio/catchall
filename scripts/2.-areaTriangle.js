@@ -6,7 +6,7 @@ function area (){
 	var side2 = parseInt(window.document.getElementById("B").value);   
 	var side3 = parseInt(window.document.getElementById("C").value);
 	
-	if(side1 == NaN || side2 == NaN || side3 == NaN){
+	if(isNaN(side1) == true || isNaN(side2) == true || isNaN(side3) == true){
 		alert ("This isnt a number");
 	}
 		
