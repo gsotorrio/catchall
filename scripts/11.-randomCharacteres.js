@@ -10,12 +10,13 @@ function showAllCharacteresUserWant(){
     }
     else{
         for (var i = 0; i < count; i++){
-            var formulaForGetRamdomElements = Math.floor(Math.random() * arrayCharacteres.length);
-            var newArrayWithRamdomElements = arrayCharacteres.splice(formulaForGetRamdomElements, 1);
+            var numberRandom = Math.floor(Math.random() * arrayCharacteres.length);
+            var takeOneElementInArray = arrayCharacteres.splice(numberRandom, 1);
         
-            showTheResult.push(newArrayWithRamdomElements[0]);
+            showTheResult.push(takeOneElementInArray[0]);
         }
         window.document.getElementById("divError").style.display = "none";
         window.document.getElementById("showCharacteres").innerText = "These are your characteres:" + " " + "[" + showTheResult + "]";  
     }
 }
+// cambiar nombre a las variables
