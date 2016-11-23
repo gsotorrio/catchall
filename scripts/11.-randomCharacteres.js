@@ -11,9 +11,8 @@ function showAllCharacteresUserWant(){
     else{
         for (var i = 0; i < count; i++){
             var numberRandom = Math.floor(Math.random() * arrayCharacteres.length);
-            var takeOneElementInArray = arrayCharacteres.splice(numberRandom, 1);
-        
-            showTheResult.push(takeOneElementInArray[0]);
+  
+            showTheResult.push(arrayCharacteres[numberRandom]);
         }
         window.document.getElementById("divError").style.display = "none";
         window.document.getElementById("showCharacteres").innerText = "These are your characteres:" + " " + "[" + showTheResult + "]";  
