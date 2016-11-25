@@ -30,10 +30,6 @@ A palindrome is word, phrase, or sequence that reads the same backward as forwar
 [["mi", "nombre", ["es", "willy"], ["sotorrio", "y"], ["tengo", "30"], ["años", "creo!!"]]
 - display it like in a sentence: mi nombre es willy sotorrio y tengo 30 años creo!!
 
-<<<<<<< HEAD
-
-=======
->>>>>>> a219926ab81ac5b256a6829cbc2c4395bbb8a49e
 10. Write a JavaScript function that returns a passed string with letters in alphabetical order.
 - Example string : 'webmaster' 
 - Expected Output : 'abeemrstw'
@@ -42,7 +38,25 @@ A palindrome is word, phrase, or sequence that reads the same backward as forwar
 11. Write a JavaScript function that generates a string id (specified length) of random characters.
 - Sample character list : "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 
-12. Write a JavaScript function to apply Bubble Sort algorithm.
+12. Write a JavaScript function to find longest substring in a given a string without repeating characters.
+- Input : "In this string Caracas is a long word but has repeated characters, only 4. Maybe characters is longer"
+- Expected output : "Characters"
+
+13. Write a JavaScript function that returns the name of the function passed as parameter.
+
+14. Write a JavaScript program to calculate the factorial of a number.
+- In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. 
+- For example, 5! = 5 x 4 x 3 x 2 x 1 = 120
+
+15. Write a JavaScript program to get the integers in range (x, y).
+- Example : range(2, 9)
+- Expected Output : [3, 4, 5, 6, 7, 8]
+
+16. Write a JavaScript program to compute the sum of an array of integers.
+- Example : var array = [1, 2, 3, 4, 5, 6]
+- Expected Output : 21
+
+17. Write a JavaScript function to apply Bubble Sort algorithm.
 - Note : According to wikipedia "Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm 
   that works by repeatedly stepping through the list to be sorted, comparing each pair of adjacent items and swapping them if they are in the wrong order". 
 - Sample array : [12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213]
