@@ -18,4 +18,3 @@ function showAllCharacteresUserWant(){
         window.document.getElementById("showCharacteres").innerText = "These are your characteres:" + " " + "[" + showTheResult + "]";  
     }
 }
-// cambiar nombre a las variables
