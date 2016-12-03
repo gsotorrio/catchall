@@ -1,19 +1,21 @@
-function getFactorialNumber (){
-    var getNumberThatTheUserGive = window.document.getElementById("userNumber").value;
-    var showFactorialResultc = "1";
+"use strict";
 
-    if (getNumberThatTheUserGive < 0){
-        getNumberThatTheUserGive = getNumberThatTheUserGive * (-1);
+function getFactorialNumber (){
+    var userNumber = window.document.getElementById("userNumber").value;
+    var result = 1;
+
+    if (userNumber < 0){
+        userNumber = userNumber * (-1);
     }
     
-    if (isNaN(getNumberThatTheUserGive) == true){
+    if (isNaN(userNumber) == true){
         window.document.getElementById("error").style.display = "inline-block";
     }
     else {
-        for(var i = 1; i <= getNumberThatTheUserGive; i++){
-            showFactorialResultc = showFactorialResultc * i;
+        for(var i = 1; i <= userNumber; i++){
+            result = result * i;
         }
         window.document.getElementById("error").style.display = "none";        
-        window.document.getElementById("showFacltorial").innerText = showFactorialResultc;
+        window.document.getElementById("showFacltorial").innerText = result;
     }
 }

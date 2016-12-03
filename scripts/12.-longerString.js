@@ -1,3 +1,5 @@
+"use strict";
+
 function showTheLongerString (){
     var getOriginalString = window.document.getElementById("originalString").innerText;
     var stringInArray = getOriginalString.split(" ");

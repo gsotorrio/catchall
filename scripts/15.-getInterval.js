@@ -1,13 +1,15 @@
+"use strict";
+
 function getInterval (){
-    var firstNumberInterval = window.document.getElementById("firstNumber").value;
-    var secondNumberInterval = window.document.getElementById("secondNumber").value;
-    var aux;
+    var firstNumberInterval = parseInt(window.document.getElementById("firstNumber").value);
+    var secondNumberInterval = parseInt(window.document.getElementById("secondNumber").value);
+    var saveTheFirstValueIfIsBiguerThanSecond;
     var arrayNumbers = [];
 
     if (firstNumberInterval > secondNumberInterval ){
-         aux = firstNumberInterval
+        saveTheFirstValueIfIsBiguerThanSecond = firstNumberInterval;
         firstNumberInterval = secondNumberInterval;
-        secondNumberInterval = aux;
+        secondNumberInterval = saveTheFirstValueIfIsBiguerThanSecond;
     }
 
     if (firstNumberInterval < 0 || secondNumberInterval > 100){
@@ -18,6 +20,6 @@ function getInterval (){
             arrayNumbers.splice(i, 0, i);
         }
         window.document.getElementById("textError").style.display = "none";    
-    }
-    window.document.getElementById("interval").innerText = arrayNumbers.slice(firstNumberInterval, secondNumberInterval);
+    }  
+  window.document.getElementById("interval").innerText = "[" + arrayNumbers.slice(firstNumberInterval, secondNumberInterval) + "]";
 }

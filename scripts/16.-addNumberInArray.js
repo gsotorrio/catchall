@@ -1,3 +1,5 @@
+"use strict";
+
 function addNumbersInArray(){
     var getNumberUser = window.document.getElementById("numberUser").value;
     var array = [];
