@@ -64,7 +64,7 @@ A palindrome is word, phrase, or sequence that reads the same backward as forwar
 
 18. Write a JavaScript function that will highlight the text inputed by the user in a textbox
 - The user types characters on a textbox
-- Anytime the user types a character, you will see that character highlighted on the rest of the page. The is not button.
+- Anytime the user types a character, you will see that character highlighted on the rest of the page. There is not button.
 - The functionality is similar to Google Chrome when you press Ctrl+F
 
 19. Write a JavaScript function that move a button around the screen.
