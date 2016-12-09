@@ -62,3 +62,14 @@ A palindrome is word, phrase, or sequence that reads the same backward as forwar
 - Sample array : [12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213]
 - Expected output : [3223, 546, 455, 345, 234, 213, 122, 98, 84, 64, 23, 12, 9, 4, 1]
 
+18. Write a JavaScript function that will highlight the text inputed by the user in a textbox
+- The user types characters on a textbox
+- Anytime the user types a character, you will see that character highlighted on the rest of the page. The is not button.
+- The functionality is similar to Google Chrome when you press Ctrl+F
+
+19. Write a JavaScript function that move a button around the screen.
+- The button will have a default position when the page is been loaded.
+- Once the user clicks the button, its position change on the screen.
+- The position has to be random.
+- The position has to be always on the limits of the screen
+
