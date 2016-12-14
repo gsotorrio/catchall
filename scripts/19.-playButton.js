@@ -2,10 +2,12 @@
 
 function changePositionbutton() {
     var button = document.getElementById('myButton');
-    var postX = Math.floor(Math.random() *1000);
+    var postX = Math.floor(Math.random() *10000);
     var postY = Math.floor(Math.random() *10000);
+    var widthScreen = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+    var heightScreen = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
    
-    if(postY > 1750){
+    if(postX > widthScreen || postY > heightScreen){
         changePositionbutton();
     }
     else{
